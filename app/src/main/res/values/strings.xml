@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GithubUserFinder</string>
+    <string name="response_failure">Failed to get response</string>
+    <string name="response_empty">No user with that name</string>
+
+    <string name="query_hint">Search Github users</string>
+    <string name="empty_data">Empty Github users</string>
+</resources>
