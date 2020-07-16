@@ -69,7 +69,6 @@ class MainActivity : AppCompatActivity(), GithubUserListView {
                 adapter.addLoadingView()
                 presenter.queryMoreUser(currentPage)
             }
-
         })
         recycler_view.addOnScrollListener(scrollListener)
 
@@ -90,7 +89,7 @@ class MainActivity : AppCompatActivity(), GithubUserListView {
     }
 
     override fun setData(userList: List<GithubUser>) {
-        recycler_view.smoothScrollToPosition(0)
+        scrollListener.resetState()
         adapter.setData(userList)
         no_data_view.visibility = View.GONE
     }

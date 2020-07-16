@@ -56,4 +56,9 @@ class RecyclerViewLoadMoreScroll(layoutManager: LinearLayoutManager) :
         }
 
     }
+
+    fun resetState() {
+        currentPage = startingPageIndex
+        previousTotalItemCount = 0
+    }
 }
